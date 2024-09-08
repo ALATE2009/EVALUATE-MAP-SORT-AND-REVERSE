@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <p id="result"></p>
+
+    <button onclick="ascending()">ASCENDING</button>
+
+    <button onclick="descending()">DESCENDING</button>
+
+<script>
+
+var numbers=[7,8,5,2,3,6,9,10,546,894561,258]
+
+document.getElementById("result").innerHTML=numbers
+
+function ascending(){
+
+    numbers.sort(function(a,b){
+
+        return a-b
+    })
+
+    document.getElementById("result").innerHTML=numbers
+}
+
+function descending(){
+
+numbers.sort(function(a,b){
+
+    return b-a
+})
+
+document.getElementById("result").innerHTML=numbers
+}
+
+</script>
+
+</body>
+
+</html>
